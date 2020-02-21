@@ -12,7 +12,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             {
-                string connStr = @"Data Source=JL_INK\SQLEXPRESS;Initial Catalog=Shop;Integrated Security=True;";
+                string connStr = @"Data Source=ORV-1;Initial Catalog=Shop;Integrated Security=False;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
                 System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connStr);
                 conn.Open();
                 while (true)
