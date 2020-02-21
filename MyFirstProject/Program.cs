@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace ConsoleApp1
 {
@@ -12,12 +13,13 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             {
-                string connStr = @"Data Source=ORV-1;Initial Catalog=Shop;Integrated Security=False;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;User ID=sa;Password=123456;";
-                System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connStr);
+               string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
+               System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connectionString);
                 conn.Open();
+
                 while (true)
                 {
-                    Console.Write ("Введите дату поставки");
+                    Console.Write ("                              Введите дату поставки");
                     Console.Write("\n");                    
                     string text = Console.ReadLine();
                     DateTime saleDate = DateTime.Now;
@@ -32,13 +34,14 @@ namespace ConsoleApp1
                     }
 
                     Console.WriteLine("Продано на 2020-01-15");
-                    String sql = @"SELECT ID,IDName, Date, Quantity FROM Shop.dbo.Sales
-                               where Date = '"  + saleDate +"'";
+                    String sql = @"SELECT s.Id, p.Name, s.Quantity, s.Date From Sales s
+                                   join Products p on P.ID = s.ProductId
+                                   where s.Date = '" + saleDate +"'";
                     SqlCommand command = new SqlCommand(sql, conn);
                     SqlDataReader reader = command.ExecuteReader();
                     while (reader.Read())
                     {
-                        Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5}", reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString());
+                        Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5}", reader["Id"].ToString(), reader["Name"].ToString(), reader["Quantity"].ToString(), reader["Date"].ToString());
                     }
                     reader.Close();
 
