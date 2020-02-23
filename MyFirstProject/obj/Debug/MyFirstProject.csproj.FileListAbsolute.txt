@@ -29,3 +29,19 @@ C:\Users\218097\Desktop\Новая папка\MyFirstProject\obj\Debug\MyFirstPr
 C:\Users\218097\Desktop\Новая папка\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
 C:\Users\218097\Desktop\Новая папка\MyFirstProject\obj\Debug\MyFirstProject.exe
 C:\Users\218097\Desktop\Новая папка\MyFirstProject\obj\Debug\MyFirstProject.pdb
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.exe.config
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.exe
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.pdb
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Dmf.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Dmf.resources.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
+D:\Repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache
+D:\Repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
+D:\Repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
+D:\Repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.exe
+D:\Repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.pdb
