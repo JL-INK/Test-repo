@@ -1,0 +1,58 @@
+
+                    Console.Write("Какую команду вы хотите совершить?");
+                    Console.Write("\n");
+                    Console.Write("(filterDate;getDel)");
+                    Console.Write("\n");
+                    string start = Console.ReadLine();
+                    switch(start)
+                    {
+                        case "filterDate" :
+                    Console.Write("Введите дату поставки");
+                    Console.Write("\n");
+                    
+                        string text = Console.ReadLine();
+                        DateTime saleDate = DateTime.Now;
+
+
+                        //Проверка вводимых данных
+                        try
+                        {
+                            saleDate = DateTime.Parse(text);
+                        }
+                        catch (Exception)
+                        {
+                            Console.WriteLine("Некорретная дата");
+                            continue;
+                        }
+                        Console.WriteLine("Продано на " + saleDate);
+
+                        //Создание Sqlparameter
+                        SqlParameter filter = new SqlParameter("@filter", SqlDbType.VarChar);
+                        filter.Value = saleDate;
+
+                        //Запрос с применением параметра
+                        SqlCommand request = new SqlCommand(
+                         @"SELECT s.Id, p.Name, s.Quantity, s.Date From Sales s
+                                    join Products p on P.ID = s.ProductId
+                                    where s.Date = @filter", connection);
+                        request.Parameters.Add(filter);
+
+                        //Считывание данных с таблицы
+                        SqlDataReader reader = request.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5}", reader["Id"].ToString(), reader["Name"].ToString(), reader["Quantity"].ToString(), reader["Date"].ToString());
+                        }
+                        reader.Close();
+                            break;
+                        case "getDel":
+
+
+
+                            break;
+                        default:
+
+                            Console.Write("Неверная команда");
+                            Console.Write("\n");
+                            break;
+                    }
