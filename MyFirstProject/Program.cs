@@ -19,7 +19,7 @@ namespace ConsoleApp1
                System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(connectionString);
                 connection.Open();
                 {
-                    while (true)
+                    
                     {
                         string ent = Console.ReadLine();
                         String[] request = ent.Split();
@@ -60,10 +60,10 @@ namespace ConsoleApp1
                                         catch (Exception)
                                         {
                                             Console.WriteLine("Некорретная дата");
-                                            continue;
+                                            
                                         }
 
-                                        Console.WriteLine("Продано на " + saleDate);
+                                        Console.WriteLine("Остатки на " + saleDate);
                                         SqlParameter date = new SqlParameter("@date", saleDate);
                                         
                                         SqlCommand balance = new SqlCommand(
@@ -86,14 +86,17 @@ namespace ConsoleApp1
                                 break;
                             case "delete":
 
-
-
+                                string sql = @"delete from " + filter + " where Id = '" + nOrD +"'";
+                                SqlCommand delete = new SqlCommand(sql,connection);
+                                delete.ExecuteNonQuery();
                                 break;
                         }
 
                     }
                 }
                 connection.Close();
+                Console.ReadKey();
+
             }
 
         }
