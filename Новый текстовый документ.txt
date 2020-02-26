@@ -1,58 +1,60 @@
+static string Get Product by Name()
+{
+SqlParameter name = new SqlParameter("@name", nOrD);
+SqlCommand product = new SqlCommand(
+@"SELECT * From Products p
+where p.Name = @name", connection);
+product.Parameters.Add(name);
 
-                    Console.Write("Какую команду вы хотите совершить?");
-                    Console.Write("\n");
-                    Console.Write("(filterDate;getDel)");
-                    Console.Write("\n");
-                    string start = Console.ReadLine();
-                    switch(start)
-                    {
-                        case "filterDate" :
-                    Console.Write("Введите дату поставки");
-                    Console.Write("\n");
-                    
-                        string text = Console.ReadLine();
-                        DateTime saleDate = DateTime.Now;
+SqlDataReader readerN = product.ExecuteReader();
+while (readerN.Read())
+{
+   Console.WriteLine("{0,18} | {1,11} | {2,5}", readerN["Id"].ToString(), readerN["Name"].ToString(), readerN["Description"].ToString());
+}
+readerN.Close();
+}
+----------------------------------------------------------------------------------------------
+static string void Get Product by Date()
+{
+string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
+System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(connectionString);
+connection.Open();
+DateTime saleDate = DateTime.Now;
+try
+{
+   saleDate = DateTime.Parse(nOrD);
+}
+catch (Exception)
+{
+   Console.WriteLine("Некорретная дата");
+                                            
+}
 
+Console.WriteLine("Остатки на " + saleDate);
+SqlParameter date = new SqlParameter("@date", saleDate);                                        
+SqlCommand balance = new SqlCommand(
+ @"select p.Id,p.Name, (u.Quantity-a.Quantity) as Quantity  from Products p
+   left join Sales a on a.ProductId = p.Id
+   left join Supply u on u.ProductId = p.Id
+   where u.Date <= @date and a.Date <= @date", connection);
+balance.Parameters.Add(date);
 
-                        //Проверка вводимых данных
-                        try
-                        {
-                            saleDate = DateTime.Parse(text);
-                        }
-                        catch (Exception)
-                        {
-                            Console.WriteLine("Некорретная дата");
-                            continue;
-                        }
-                        Console.WriteLine("Продано на " + saleDate);
-
-                        //Создание Sqlparameter
-                        SqlParameter filter = new SqlParameter("@filter", SqlDbType.VarChar);
-                        filter.Value = saleDate;
-
-                        //Запрос с применением параметра
-                        SqlCommand request = new SqlCommand(
-                         @"SELECT s.Id, p.Name, s.Quantity, s.Date From Sales s
-                                    join Products p on P.ID = s.ProductId
-                                    where s.Date = @filter", connection);
-                        request.Parameters.Add(filter);
-
-                        //Считывание данных с таблицы
-                        SqlDataReader reader = request.ExecuteReader();
-                        while (reader.Read())
-                        {
-                            Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5}", reader["Id"].ToString(), reader["Name"].ToString(), reader["Quantity"].ToString(), reader["Date"].ToString());
-                        }
-                        reader.Close();
-                            break;
-                        case "getDel":
-
-
-
-                            break;
-                        default:
-
-                            Console.Write("Неверная команда");
-                            Console.Write("\n");
-                            break;
-                    }
+SqlDataReader readerD = balance.ExecuteReader();
+while (readerD.Read())
+{
+    Console.WriteLine("{0,18} | {1,11} | {2,5}", readerD["Id"].ToString(), readerD["Name"].ToString(), readerD["Quantity"].ToString());
+}
+readerD.Close();
+connection.Close();
+}
+----------------------------------------------------------------------------------------------
+static void Get Product by Name(string[])
+{
+string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
+System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(connectionString);
+connection.Open();
+string sql = @"delete from " + filter + " where Id = '" + nOrD +"'";
+SqlCommand delete = new SqlCommand(sql,connection);
+delete.ExecuteNonQuery();
+connection.Close();
+}
