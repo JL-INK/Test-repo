@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
 using MyFirstProject.Service;
+using MyFirstProject.Models;
 
 namespace ConsoleApp1
 {
@@ -32,12 +33,18 @@ namespace ConsoleApp1
                         switch (filterV)
                         {
                             case "name":
-                                var nameText = service.GetProductByName(connectionString, nameOrDate);
-                                Console.WriteLine(nameText);
+                                List<BalanceProduct> products = service.GetProductByName(connectionString, nameOrDate);
+                                foreach (BalanceProduct product in products)
+                                {
+                                    Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, product.Id, product.Name, product.Description, product.Quantity);
+                                }
                                 break;
                             case "date":
-                                var dateText = service.GetProductByDate(connectionString, nameOrDate);
-                                Console.Write(dateText);
+                                List<BalanceProduct> dates = service.GetProductByDate(connectionString, nameOrDate);
+                                foreach (BalanceProduct date in dates)
+                                {
+                                    Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, date.Id, date.Name, date.Description, date.Quantity);
+                                }
                                 break;
                         }
                         break;
@@ -47,7 +54,10 @@ namespace ConsoleApp1
                         break;
 
                     case "add":
-                        service.AddFromTable(filterV, nameOrDate);
+                        var balance = new BalanceProduct();
+                        balance.Name = filterV;
+                        balance.Description = nameOrDate;
+                        service.AddFromTable(balance);
                         break;
                 }
                 Console.WriteLine("Для выхода введите:exit");

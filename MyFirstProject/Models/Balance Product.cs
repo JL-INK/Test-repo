@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace MyFirstProject.Models
 {
-    class Balance_Product
+    public class BalanceProduct
     {
-        public string name { get; set; }
+        public int Id { get; set; }
 
-        public string description { get; set; }
+        public string Name { get; set; }
 
-        public string Quantity { get; set; }
+        public string Description { get; set; }
+
+        public int Quantity { get; set; }
 
     }
 }
