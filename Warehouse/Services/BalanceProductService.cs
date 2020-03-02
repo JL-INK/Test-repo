@@ -9,7 +9,7 @@ namespace Warehouse.Service
     public class BalanceProductService
     {
         string _connectionString;
-        
+
         public BalanceProductService(string connectionString)
         {
             _connectionString = connectionString;
@@ -134,6 +134,35 @@ namespace Warehouse.Service
             command.Parameters.Add(new SqlParameter("@Descrition", description));
             command.ExecuteNonQuery();
             connection.Close();
+        }
+
+        /// <summary>
+        /// Вывести все продукты
+        /// </summary>
+        /// <param name="name">Название</param>
+        /// <returns></returns>
+        public List<BalanceProduct> GetProducts()
+        {
+            List<BalanceProduct> list = new List<BalanceProduct>();
+            using (SqlConnection connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                SqlCommand product = new SqlCommand(@"select * from Products", connection);
+                SqlDataReader readerName = product.ExecuteReader();
+                while (readerName.Read())
+                {
+                    BalanceProduct item = new BalanceProduct()
+                    {
+                        Id = (int)readerName["Id"],
+                        Name = readerName["Name"].ToString(),
+                        Description = readerName["Description"].ToString(),
+                    };
+                    list.Add(item);
+                }
+                readerName.Close();
+                connection.Close();
+            }
+            return list;
         }
     }
 }

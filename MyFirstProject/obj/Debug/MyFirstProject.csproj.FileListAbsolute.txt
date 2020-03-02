@@ -81,3 +81,5 @@ D:\My repo\Test-repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.exe
 D:\My repo\Test-repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.pdb
 D:\My repo\Test-repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb
 D:\My repo\Test-repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
+D:\Repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb

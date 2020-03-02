@@ -62,9 +62,19 @@ namespace ConsoleApp1
                                         }
                                         break;
                                     }
+                                case "products":
+                                    {
+                                        List<BalanceProduct> products = service.GetProducts();
+                                        foreach (BalanceProduct product in products)
+                                        {
+                                            Console.WriteLine("{0,18} | {1,11} | {2,5} " + Environment.NewLine, product.Id, product.Name, product.Description);
+                                        }
+                                        break;
+                                    }
                             }
                             break;
                         }
+
                     case "delete":
                         {
                             service.DeleteFromTable(filterV, nameOrDate);
