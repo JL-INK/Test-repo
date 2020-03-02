@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Data;
-using MyFirstProject.Service;
-using MyFirstProject.Models;
+using Warehouse.Service;
+using Warehouse.Models;
 
 namespace ConsoleApp1
 {
     class Program
     {
-        static string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
+        static readonly string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
 
         static void Main()
         {
@@ -26,21 +26,22 @@ namespace ConsoleApp1
                 var cmd = request[0];
                 var filterV = request[1];
                 var nameOrDate = request[2];
-                var service = new BalanseProdustService(connectionString);
+                var service = new BalanceProductService(connectionString);
+                var balance = new BalanceProduct();
                 switch (cmd)
                 {
                     case "get":
                         switch (filterV)
                         {
                             case "name":
-                                List<BalanceProduct> products = service.GetProductByName(connectionString, nameOrDate);
+                                List<BalanceProduct> products = service.GetProductByName(nameOrDate);
                                 foreach (BalanceProduct product in products)
                                 {
                                     Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, product.Id, product.Name, product.Description, product.Quantity);
                                 }
                                 break;
                             case "date":
-                                List<BalanceProduct> dates = service.GetProductByDate(connectionString, nameOrDate);
+                                List<BalanceProduct> dates = service.GetProductByDate(nameOrDate);
                                 foreach (BalanceProduct date in dates)
                                 {
                                     Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, date.Id, date.Name, date.Description, date.Quantity);
@@ -54,9 +55,9 @@ namespace ConsoleApp1
                         break;
 
                     case "add":
-                        var balance = new BalanceProduct();
-                        balance.Name = nameOrDate;
-                        service.AddFromTable(balance,filterV,nameOrDate);
+                        balance.Name = filterV;
+                        balance.Description = nameOrDate;
+                        service.AddFromTable(balance);
                         break;
                 }
                 Console.WriteLine("Для выхода введите:exit");
