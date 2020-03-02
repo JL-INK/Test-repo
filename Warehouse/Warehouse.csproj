@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BalanceProductService.cs" />
-    <Compile Include="BalanceProduct.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Services\BalanceProductService.cs" />
+    <Compile Include="Models\BalanceProduct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

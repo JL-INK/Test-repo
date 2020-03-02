@@ -27,43 +27,63 @@ namespace ConsoleApp1
                 var filterV = request[1];
                 var nameOrDate = request[2];
                 var service = new BalanceProductService(connectionString);
-                var balance = new BalanceProduct();
+
                 switch (cmd)
                 {
                     case "get":
-                        switch (filterV)
                         {
-                            case "name":
-                                List<BalanceProduct> products = service.GetProductByName(nameOrDate);
-                                foreach (BalanceProduct product in products)
-                                {
-                                    Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, product.Id, product.Name, product.Description, product.Quantity);
-                                }
-                                break;
-                            case "date":
-                                List<BalanceProduct> dates = service.GetProductByDate(nameOrDate);
-                                foreach (BalanceProduct date in dates)
-                                {
-                                    Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, date.Id, date.Name, date.Description, date.Quantity);
-                                }
-                                break;
+                            switch (filterV)
+                            {
+                                case "name":
+                                    {
+                                        List<BalanceProduct> products = service.GetProductByName(nameOrDate);
+                                        foreach (BalanceProduct product in products)
+                                        {
+                                            Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, product.Id, product.Name, product.Description, product.Quantity);
+                                        }
+                                        break;
+                                    }
+                                case "date":
+                                    {
+                                        DateTime saleDate;
+                                        try
+                                        {
+                                            saleDate = DateTime.Parse((string)nameOrDate);
+                                            Console.WriteLine("Остатки на " + saleDate);
+                                            List<BalanceProduct> dates = service.GetProductByDate(nameOrDate);
+                                            foreach (BalanceProduct date in dates)
+                                            {
+                                                Console.WriteLine("{0,18} | {1,11} | {2,5} | {3,5} " + Environment.NewLine, date.Id, date.Name, date.Description, date.Quantity);
+                                            }
+                                        }
+                                        catch (Exception)
+                                        {
+                                            Console.WriteLine("Некорретная дата");
+                                        }
+                                        break;
+                                    }
+                            }
+                            break;
                         }
-                        break;
-
                     case "delete":
-                        service.DeleteFromTable(filterV, nameOrDate);
-                        break;
+                        {
+                            service.DeleteFromTable(filterV, nameOrDate);
+                            break;
+                        }
 
                     case "add":
-                        balance.Name = filterV;
-                        balance.Description = nameOrDate;
-                        service.AddFromTable(balance);
-                        break;
+                        {
+                            var product = new Product();
+                            product.Name = filterV;
+                            product.Description = nameOrDate;
+                            service.AddProduct(product);
+                            break;
+                        }
                 }
+
                 Console.WriteLine("Для выхода введите:exit");
                 isContinue = Console.ReadLine() != "exit";
             }
         }
-
     }
 }
