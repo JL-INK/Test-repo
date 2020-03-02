@@ -55,9 +55,8 @@ namespace ConsoleApp1
 
                     case "add":
                         var balance = new BalanceProduct();
-                        balance.Name = filterV;
-                        balance.Description = nameOrDate;
-                        service.AddFromTable(balance);
+                        balance.Name = nameOrDate;
+                        service.AddFromTable(balance,filterV,nameOrDate);
                         break;
                 }
                 Console.WriteLine("Для выхода введите:exit");

@@ -13,6 +13,7 @@ namespace MyFirstProject.Service
     public class BalanseProdustService
     {
         string _connectionString;
+
         public BalanseProdustService(string connectionString)
         {
             _connectionString = connectionString;
@@ -108,21 +109,7 @@ namespace MyFirstProject.Service
             connection.Close();
         }
 
-        public void AddFromTable(string filterV, string nameOrDate)
-        {
-            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
-            connection.Open();
-            string sql = @"insert into Products (Name,Description)
-                               values (@Name,@Description)";
-            SqlCommand comand = new SqlCommand(sql, connection);
-            comand.Parameters.Add(new SqlParameter("@Name", filterV));
-            comand.Parameters.Add(new SqlParameter("@Descrition", nameOrDate));
-            comand.ExecuteNonQuery();
-            connection.Close();
-
-        }
-
-        public void AddFromTable(BalanceProduct balance)
+        /*public void AddFromTable(BalanceProduct balance)
         {
             System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
             connection.Open();
@@ -133,6 +120,40 @@ namespace MyFirstProject.Service
             comand.Parameters.Add(new SqlParameter("@Descrition", balance.Description));
             comand.ExecuteNonQuery();
             connection.Close();
+        }
+        public void AddFromTable(string filterV, string nameOrDate)
+        {
+            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
+            connection.Open();
+            string sql = @"insert into Products (Name,Description)
+                               values (@Name,@Descrition)";
+            SqlCommand command = new SqlCommand(sql, connection);
+            command.Parameters.Add(new SqlParameter("@Name", filterV));
+            command.Parameters.Add(new SqlParameter("@Descrition", nameOrDate));
+            command.ExecuteNonQuery();
+            connection.Close();
+        }*/
+        public void AddFromTable(BalanceProduct balance, string filterV, string nameOrDate)
+        {
+            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
+            connection.Open();
+            string sql = @"insert into Products (Name)
+                               values(@Name)";
+            SqlCommand command = new SqlCommand(sql, connection);
+            switch (filterV)
+            {
+                case "inbalance":
+                    command.Parameters.Add(new SqlParameter("@Name", balance.Name));
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    break;
+
+                case "name":
+                    command.Parameters.Add(new SqlParameter("@Name", nameOrDate));
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    break;
+            }
         }
     }
 }
