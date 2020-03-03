@@ -31,7 +31,7 @@ namespace Warehouse.Service
                 @"select p.Id,p.Name, Description,(u.Quantity-a.Quantity) as Quantity  from Products p
                               left join Sales a on a.ProductId = p.Id
                               left join Supply u on u.ProductId = p.Id
-                where p.Name like '%' + @name + '%'", connection);
+                              where p.Name like '%' + @name + '%'", connection);
                 product.Parameters.Add(paramName);
 
                 SqlDataReader readerName = product.ExecuteReader();
@@ -70,7 +70,7 @@ namespace Warehouse.Service
                  @"select p.Id,p.Name,Description, (u.Quantity-a.Quantity) as Quantity  from Products p
                               left join Sales a on a.ProductId = p.Id
                               left join Supply u on u.ProductId = p.Id
-                              where u.Date <= @date and a.Date <= @date", connection);
+    where u.Date <= @date and a.Date <= @date", connection);
                 balance.Parameters.Add(paramDate);
 
                 SqlDataReader readerDate = balance.ExecuteReader();
