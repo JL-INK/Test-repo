@@ -17,6 +17,11 @@ namespace Warehouse.Models
         public int Id { get; set; }
 
         /// <summary>
+        /// ИД продукта
+        /// </summary>
+        public int ProductId { get; set; }
+
+        /// <summary>
         /// Название
         /// </summary>
         public string Name { get; set; }
@@ -30,6 +35,10 @@ namespace Warehouse.Models
         /// Количество
         /// </summary>
         public int Quantity { get; set; }
-
+        /// <summary>
+        /// Дата
+        /// </summary>
+        public DateTime Date { get; set; }
+    
     }
 }

@@ -54,6 +54,8 @@
                         <li><a runat="server" href="~/">Домашняя</a></li>
                         <li><a runat="server" href="~/About">Информация</a></li>
                         <li><a runat="server" href="~/Contact">Связаться</a></li>
+                        <li><a runat="server" href="~/WebShop">Магазин</a></li>
+                        <li><a runat="server" href="~/Warehouse">Закупки</a></li>
                     </ul>
                 </div>
             </div>

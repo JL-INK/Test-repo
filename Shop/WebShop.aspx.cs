@@ -8,10 +8,11 @@ namespace Shop
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        string connectionString;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         }
        
         protected void TextBox1_TextChanged(object sender, EventArgs e)
@@ -33,19 +34,21 @@ namespace Shop
             string description = TextBox2.Text.ToString();
             product.Description = description;
             service.AddProduct(product);
+            GridView1.DataBind();
         }
 
         protected void Delete_Click(object sender, EventArgs e)
         {
             var service = new BalanceProductService(connectionString);
-            var product = new Product();
-            string name = TextBox1.Text.ToString();
-            product.Name = name;
-            string description = TextBox2.Text.ToString();
-            product.Description = description;
-            service.DeleteFromTable(name, description);
+            if (GridView1.SelectedDataKey == null)
+            {
+                return;
+            }
+            string productId = GridView1.SelectedDataKey["Id"].ToString();
+               string tableName = "Products";
+            service.DeleteFromTable(tableName, productId);
+            GridView1.DataBind();
         }
-
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 

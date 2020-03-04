@@ -6,6 +6,12 @@
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Магазин</title>
+    <style type="text/css">
+        #form1 {
+            height: 443px;
+            width: 429px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -19,9 +25,9 @@
         &nbsp;<asp:Button ID="Delete" runat="server" OnClick="Delete_Click" Text="Удалить" />
         <br />
         <br />
-        <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="187px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="214px">
             <Columns>
+                <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" />
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                 <asp:BoundField DataField="Description" HeaderText="Description" SortExpression="Description" />
