@@ -52,6 +52,11 @@ namespace Warehouse.Service
             return list;
         }
 
+        public void AddSupply(int id, int quantity)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Сортировать по дате
         /// </summary>
@@ -91,7 +96,7 @@ namespace Warehouse.Service
             }
             return list;
         }
-       
+
         /// <summary>
         /// Удалить строку по ИД
         /// </summary>
@@ -136,20 +141,6 @@ namespace Warehouse.Service
             connection.Close();
         }
 
-        public void AddSupply(int id, int quantity, DateTime date)
-        {
-            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
-            connection.Open();
-            string sql = @"insert into Supply (ProductId,Date,Quantity)
-                               values (@ProductId,@Date,@Quantity)";
-            SqlCommand command = new SqlCommand(sql, connection);
-            command.Parameters.Add(new SqlParameter("@ProductId", id));
-            command.Parameters.Add(new SqlParameter("@Quantity", quantity));
-            command.Parameters.Add(new SqlParameter("@Date", date));
-            command.ExecuteNonQuery();
-            connection.Close();
-        }
-
         /// <summary>
         /// Вывести все продукты
         /// </summary>
@@ -178,5 +169,21 @@ namespace Warehouse.Service
             }
             return list;
         }
+
+        public void AddSales(int id, int quantity, DateTime date)
+        {
+            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
+            connection.Open();
+            string sql = @"insert into Sales (ProductId,Quantity,Date)
+                               values (@ProductId,@Quantity,@Date)";
+            SqlCommand command = new SqlCommand(sql, connection);
+            command.Parameters.Add(new SqlParameter("@ProductId", id));
+            command.Parameters.Add(new SqlParameter("@Quantity", quantity));
+            command.Parameters.Add(new SqlParameter("@Date", date));
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+
     }
 }
