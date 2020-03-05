@@ -14,6 +14,7 @@ namespace ConsoleApp1
     class Program
     {
         static readonly string connectionString = ConfigurationManager.ConnectionStrings["Shop"].ConnectionString;
+        
 
         static void Main()
         {
