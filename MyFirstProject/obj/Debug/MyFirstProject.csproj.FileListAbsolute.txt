@@ -57,7 +57,6 @@ D:\My repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
 D:\My repo\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
 D:\My repo\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Dmf.resources.dll
 D:\My repo\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
-D:\My repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache
 D:\My repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
 D:\My repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
 D:\My repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.exe
@@ -83,57 +82,6 @@ D:\My repo\Test-repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb
 D:\My repo\Test-repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
 D:\Repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
 D:\Repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb
-D:\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.exe.config
-D:\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.exe
-D:\Test-repo\MyFirstProject\bin\Debug\MyFirstProject.pdb
-D:\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Dmf.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Smo.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-D:\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb
-D:\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Dmf.resources.dll
-D:\Test-repo\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
-D:\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache
-D:\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
-D:\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
-D:\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.exe
-D:\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.pdb
-C:\Работы\Zed\MyFirstProject\bin\Debug\MyFirstProject.exe.config
-C:\Работы\Zed\MyFirstProject\bin\Debug\MyFirstProject.exe
-C:\Работы\Zed\MyFirstProject\bin\Debug\MyFirstProject.pdb
-C:\Работы\Zed\MyFirstProject\bin\Debug\Warehouse.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Dmf.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Smo.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\Warehouse.pdb
-C:\Работы\Zed\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Dmf.resources.dll
-C:\Работы\Zed\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
-C:\Работы\Zed\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache
-C:\Работы\Zed\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
-C:\Работы\Zed\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
-C:\Работы\Zed\MyFirstProject\obj\Debug\MyFirstProject.exe
-C:\Работы\Zed\MyFirstProject\obj\Debug\MyFirstProject.pdb
-D:\Zed\MyFirstProject\bin\Debug\MyFirstProject.exe.config
-D:\Zed\MyFirstProject\bin\Debug\MyFirstProject.exe
-D:\Zed\MyFirstProject\bin\Debug\MyFirstProject.pdb
-D:\Zed\MyFirstProject\bin\Debug\Warehouse.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Dmf.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Smo.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
-D:\Zed\MyFirstProject\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
-D:\Zed\MyFirstProject\bin\Debug\Warehouse.pdb
-D:\Zed\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Dmf.resources.dll
-D:\Zed\MyFirstProject\bin\Debug\ru\Microsoft.SqlServer.Management.Sdk.Sfc.resources.dll
-D:\Zed\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache
-D:\Zed\MyFirstProject\obj\Debug\MyFirstProject.csproj.CoreCompileInputs.cache
-D:\Zed\MyFirstProject\obj\Debug\MyFirstProject.csproj.CopyComplete
-D:\Zed\MyFirstProject\obj\Debug\MyFirstProject.exe
-D:\Zed\MyFirstProject\obj\Debug\MyFirstProject.pdb
+D:\My repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.dll
+D:\My repo\Test-repo\MyFirstProject\bin\Debug\Warehouse.pdb
+D:\My repo\Test-repo\MyFirstProject\obj\Debug\MyFirstProject.csprojAssemblyReference.cache

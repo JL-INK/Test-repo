@@ -1,25 +1,44 @@
-﻿using Warehouse.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Warehouse.Models
+{
+    public class BalanceProduct
+    {
+        public int Id { get; set; }
+
+        public string Name { get; set; }
+
+        public string Description { get; set; }
+
+        public int Quantity { get; set; }
+
+    }
+}
+--------------------------------------------------------------------------------------
+using Warehouse.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 
 namespace Warehouse.Service
 {
-    public class BalanceProductService
+    public class BalanseProdustService
     {
         string _connectionString;
 
-        public BalanceProductService(string connectionString)
+        public BalanseProdustService(string connectionString)
         {
             _connectionString = connectionString;
         }
 
-        /// <summary>
-        /// Сортировать по названию
-        /// </summary>
-        /// <param name="name">название</param>
-        /// <returns></returns>
         public List<BalanceProduct> GetProductByName(string name)
         {
             List<BalanceProduct> list = new List<BalanceProduct>();
@@ -31,7 +50,7 @@ namespace Warehouse.Service
                 @"select p.Id,p.Name, Description,(u.Quantity-a.Quantity) as Quantity  from Products p
                               left join Sales a on a.ProductId = p.Id
                               left join Supply u on u.ProductId = p.Id
-                              where p.Name like '%' + @name + '%'", connection);
+                where p.Name like '%' + @name + '%'", connection);
                 product.Parameters.Add(paramName);
 
                 SqlDataReader readerName = product.ExecuteReader();
@@ -52,11 +71,6 @@ namespace Warehouse.Service
             return list;
         }
 
-        /// <summary>
-        /// Сортировать по дате
-        /// </summary>
-        /// <param name="date">Дата</param>
-        /// <returns></returns>
         public List<BalanceProduct> GetProductByDate(string date)
         {
             List<BalanceProduct> list = new List<BalanceProduct>();
@@ -64,13 +78,22 @@ namespace Warehouse.Service
             {
                 connection.Open();
                 DateTime saleDate = DateTime.Now;
+                try
+                {
+                    saleDate = DateTime.Parse((string)date);
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("����������� ����");
 
+                }
+                Console.WriteLine("������� �� " + saleDate);
                 SqlParameter paramDate = new SqlParameter("@date", saleDate);
                 SqlCommand balance = new SqlCommand(
                  @"select p.Id,p.Name,Description, (u.Quantity-a.Quantity) as Quantity  from Products p
                               left join Sales a on a.ProductId = p.Id
                               left join Supply u on u.ProductId = p.Id
-    where u.Date <= @date and a.Date <= @date", connection);
+                              where u.Date <= @date and a.Date <= @date", connection);
                 balance.Parameters.Add(paramDate);
 
                 SqlDataReader readerDate = balance.ExecuteReader();
@@ -91,17 +114,12 @@ namespace Warehouse.Service
             }
             return list;
         }
-       
-        /// <summary>
-        /// Удалить строку по ИД
-        /// </summary>
-        /// <param name="tableName">Название таблицы</param>
-        /// <param name="rowId">ИД</param>
-        public void DeleteFromTable(string tableName, string rowId)
+
+        public void DeleteFromTable(string filterV, string deleteName)
         {
             System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
             connection.Open();
-            string sql = @"delete from " + tableName + " where Id = '" + rowId + "'";
+            string sql = @"delete from " + filterV + " where Id = '" + deleteName + "'";
             using (SqlCommand delete = new SqlCommand(sql, connection))
             {
                 delete.ExecuteNonQuery();
@@ -109,74 +127,22 @@ namespace Warehouse.Service
             connection.Close();
         }
 
-        /// <summary>
-        /// Добавить продукт
-        /// </summary>
-        /// <param name="product">Продукт</param>
-        public void AddProduct(Product product)
+        public void AddFromTable(BalanceProduct balance)
         {
-            AddProduct(product.Name, product.Description);
+            AddFromTable(balance.Name, balance.Description);
         }
 
-        /// <summary>
-        /// Добавить продукт
-        /// </summary>
-        /// <param name="productName">Наименование продукта</param>
-        /// <param name="description">Описание продукта</param>
-        public void AddProduct(string productName, string description)
+        public void AddFromTable(string filterV, string nameOrDate)
         {
             System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
             connection.Open();
             string sql = @"insert into Products (Name,Description)
                                values (@Name,@Descrition)";
             SqlCommand command = new SqlCommand(sql, connection);
-            command.Parameters.Add(new SqlParameter("@Name", productName));
-            command.Parameters.Add(new SqlParameter("@Descrition", description));
+            command.Parameters.Add(new SqlParameter("@Name", filterV));
+            command.Parameters.Add(new SqlParameter("@Descrition", nameOrDate));
             command.ExecuteNonQuery();
             connection.Close();
-        }
-
-        public void AddSupply(int id, int quantity, DateTime date)
-        {
-            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
-            connection.Open();
-            string sql = @"insert into Supply (ProductId,Date,Quantity)
-                               values (@ProductId,@Date,@Quantity)";
-            SqlCommand command = new SqlCommand(sql, connection);
-            command.Parameters.Add(new SqlParameter("@ProductId", id));
-            command.Parameters.Add(new SqlParameter("@Quantity", quantity));
-            command.Parameters.Add(new SqlParameter("@Date", date));
-            command.ExecuteNonQuery();
-            connection.Close();
-        }
-
-        /// <summary>
-        /// Вывести все продукты
-        /// </summary>
-        /// <param name="name">Название</param>
-        /// <returns></returns>
-        public List<BalanceProduct> GetProducts()
-        {
-            List<BalanceProduct> list = new List<BalanceProduct>();
-            using (SqlConnection connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-                SqlCommand product = new SqlCommand(@"select * from Products", connection);
-                SqlDataReader readerName = product.ExecuteReader();
-                while (readerName.Read())
-                {
-                    BalanceProduct item = new BalanceProduct()
-                    {
-                        Id = (int)readerName["Id"],
-                        Name = readerName["Name"].ToString(),
-                        Description = readerName["Description"].ToString(),
-                    };
-                    list.Add(item);
-                }
-                readerName.Close();
-                connection.Close();
-            }
-            return list;
         }
     }
 }
