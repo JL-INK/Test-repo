@@ -9,21 +9,9 @@ D:\Repo\Test-repo\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
 D:\Repo\Test-repo\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
 D:\Repo\Test-repo\Warehouse\obj\Debug\Warehouse.dll
 D:\Repo\Test-repo\Warehouse\obj\Debug\Warehouse.pdb
-D:\Test-repo\Warehouse\bin\Debug\Warehouse.dll
-D:\Test-repo\Warehouse\bin\Debug\Warehouse.pdb
-D:\Test-repo\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
-D:\Test-repo\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
-D:\Test-repo\Warehouse\obj\Debug\Warehouse.dll
-D:\Test-repo\Warehouse\obj\Debug\Warehouse.pdb
-C:\Работы\Zed\Warehouse\bin\Debug\Warehouse.dll
-C:\Работы\Zed\Warehouse\bin\Debug\Warehouse.pdb
-C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
-C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
-C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.dll
-C:\Работы\Zed\Warehouse\obj\Debug\Warehouse.pdb
-D:\Zed\Warehouse\bin\Debug\Warehouse.dll
-D:\Zed\Warehouse\bin\Debug\Warehouse.pdb
-D:\Zed\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
-D:\Zed\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
-D:\Zed\Warehouse\obj\Debug\Warehouse.dll
-D:\Zed\Warehouse\obj\Debug\Warehouse.pdb
+D:\My repo\Test-repo\Warehouse\bin\Debug\Warehouse.dll
+D:\My repo\Test-repo\Warehouse\bin\Debug\Warehouse.pdb
+D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
+D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
+D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.dll
+D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.pdb

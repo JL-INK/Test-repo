@@ -4,7 +4,7 @@
 
 <html lang="en">
 <head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> – мое приложение ASP.NET</title>
@@ -13,7 +13,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -54,6 +54,8 @@
                         <li><a runat="server" href="~/">Домашняя</a></li>
                         <li><a runat="server" href="~/About">Информация</a></li>
                         <li><a runat="server" href="~/Contact">Связаться</a></li>
+                        <li><a runat="server" href="~/WebShop">Магазин</a></li>
+                        <li><a runat="server" href="~/Warehouse">Закупки</a></li>
                     </ul>
                 </div>
             </div>

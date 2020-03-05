@@ -35,11 +35,10 @@ namespace Warehouse.Models
         /// Количество
         /// </summary>
         public int Quantity { get; set; }
-
         /// <summary>
         /// Дата
         /// </summary>
         public DateTime Date { get; set; }
-
+    
     }
 }

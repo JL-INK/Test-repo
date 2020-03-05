@@ -76,237 +76,81 @@ D:\Repo\Test-repo\Shop\bin\Warehouse.dll
 D:\Repo\Test-repo\Shop\bin\MyFirstProject.pdb
 D:\Repo\Test-repo\Shop\bin\MyFirstProject.exe.config
 D:\Repo\Test-repo\Shop\bin\Warehouse.pdb
-D:\Test-repo\Shop\bin\Shop.dll.config
-D:\Test-repo\Shop\bin\Shop.dll
-D:\Test-repo\Shop\bin\Shop.pdb
-D:\Test-repo\Shop\bin\roslyn\csc.exe
-D:\Test-repo\Shop\bin\roslyn\csc.exe.config
-D:\Test-repo\Shop\bin\roslyn\csc.rsp
-D:\Test-repo\Shop\bin\roslyn\csi.exe
-D:\Test-repo\Shop\bin\roslyn\csi.exe.config
-D:\Test-repo\Shop\bin\roslyn\csi.rsp
-D:\Test-repo\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Test-repo\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Test-repo\Shop\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Test-repo\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Test-repo\Shop\bin\roslyn\System.AppContext.dll
-D:\Test-repo\Shop\bin\roslyn\System.Collections.Immutable.dll
-D:\Test-repo\Shop\bin\roslyn\System.Console.dll
-D:\Test-repo\Shop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\Test-repo\Shop\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Test-repo\Shop\bin\roslyn\System.IO.Compression.dll
-D:\Test-repo\Shop\bin\roslyn\System.IO.FileSystem.dll
-D:\Test-repo\Shop\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Test-repo\Shop\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\Test-repo\Shop\bin\roslyn\System.IO.Pipes.dll
-D:\Test-repo\Shop\bin\roslyn\System.Reflection.Metadata.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.AccessControl.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Claims.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Test-repo\Shop\bin\roslyn\System.Security.Principal.Windows.dll
-D:\Test-repo\Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Test-repo\Shop\bin\roslyn\System.ValueTuple.dll
-D:\Test-repo\Shop\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\Test-repo\Shop\bin\roslyn\System.Xml.XmlDocument.dll
-D:\Test-repo\Shop\bin\roslyn\System.Xml.XPath.dll
-D:\Test-repo\Shop\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\Test-repo\Shop\bin\roslyn\vbc.exe
-D:\Test-repo\Shop\bin\roslyn\vbc.exe.config
-D:\Test-repo\Shop\bin\roslyn\vbc.rsp
-D:\Test-repo\Shop\bin\roslyn\VBCSCompiler.exe
-D:\Test-repo\Shop\bin\roslyn\VBCSCompiler.exe.config
-D:\Test-repo\Shop\bin\Antlr3.Runtime.dll
-D:\Test-repo\Shop\bin\AspNet.ScriptManager.bootstrap.dll
-D:\Test-repo\Shop\bin\AspNet.ScriptManager.jQuery.dll
-D:\Test-repo\Shop\bin\Microsoft.AspNet.FriendlyUrls.dll
-D:\Test-repo\Shop\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-D:\Test-repo\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Test-repo\Shop\bin\Microsoft.ScriptManager.MSAjax.dll
-D:\Test-repo\Shop\bin\Microsoft.ScriptManager.WebForms.dll
-D:\Test-repo\Shop\bin\Microsoft.Web.Infrastructure.dll
-D:\Test-repo\Shop\bin\MyFirstProject.exe
-D:\Test-repo\Shop\bin\Newtonsoft.Json.dll
-D:\Test-repo\Shop\bin\System.Web.Optimization.dll
-D:\Test-repo\Shop\bin\Warehouse.dll
-D:\Test-repo\Shop\bin\WebGrease.dll
-D:\Test-repo\Shop\bin\MyFirstProject.pdb
-D:\Test-repo\Shop\bin\MyFirstProject.exe.config
-D:\Test-repo\Shop\bin\Warehouse.pdb
-D:\Test-repo\Shop\bin\System.Web.Optimization.xml
-D:\Test-repo\Shop\bin\Newtonsoft.Json.xml
-D:\Test-repo\Shop\bin\Antlr3.Runtime.pdb
-D:\Test-repo\Shop\bin\Microsoft.AspNet.FriendlyUrls.xml
-D:\Test-repo\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Test-repo\Shop\bin\ru\System.Web.Optimization.resources.dll
-D:\Test-repo\Shop\bin\ru\Microsoft.AspNet.FriendlyUrls.resources.dll
-D:\Test-repo\Shop\obj\Debug\Shop.csprojAssemblyReference.cache
-D:\Test-repo\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
-D:\Test-repo\Shop\obj\Debug\Shop.csproj.CopyComplete
-D:\Test-repo\Shop\obj\Debug\Shop.dll
-D:\Test-repo\Shop\obj\Debug\Shop.pdb
-C:\Работы\Zed\Shop\bin\Shop.dll.config
-C:\Работы\Zed\Shop\bin\Shop.dll
-C:\Работы\Zed\Shop\bin\Shop.pdb
-C:\Работы\Zed\Shop\bin\roslyn\csc.exe
-C:\Работы\Zed\Shop\bin\roslyn\csc.exe.config
-C:\Работы\Zed\Shop\bin\roslyn\csc.rsp
-C:\Работы\Zed\Shop\bin\roslyn\csi.exe
-C:\Работы\Zed\Shop\bin\roslyn\csi.exe.config
-C:\Работы\Zed\Shop\bin\roslyn\csi.rsp
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Работы\Zed\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Работы\Zed\Shop\bin\roslyn\System.AppContext.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Collections.Immutable.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Console.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.IO.Compression.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.IO.FileSystem.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.IO.Pipes.AccessControl.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.IO.Pipes.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Reflection.Metadata.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.AccessControl.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Claims.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Security.Principal.Windows.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.ValueTuple.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Xml.XPath.dll
-C:\Работы\Zed\Shop\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Работы\Zed\Shop\bin\roslyn\vbc.exe
-C:\Работы\Zed\Shop\bin\roslyn\vbc.exe.config
-C:\Работы\Zed\Shop\bin\roslyn\vbc.rsp
-C:\Работы\Zed\Shop\bin\roslyn\VBCSCompiler.exe
-C:\Работы\Zed\Shop\bin\roslyn\VBCSCompiler.exe.config
-C:\Работы\Zed\Shop\bin\Antlr3.Runtime.dll
-C:\Работы\Zed\Shop\bin\AspNet.ScriptManager.bootstrap.dll
-C:\Работы\Zed\Shop\bin\AspNet.ScriptManager.jQuery.dll
-C:\Работы\Zed\Shop\bin\Microsoft.AspNet.FriendlyUrls.dll
-C:\Работы\Zed\Shop\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-C:\Работы\Zed\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Работы\Zed\Shop\bin\Microsoft.ScriptManager.MSAjax.dll
-C:\Работы\Zed\Shop\bin\Microsoft.ScriptManager.WebForms.dll
-C:\Работы\Zed\Shop\bin\Microsoft.Web.Infrastructure.dll
-C:\Работы\Zed\Shop\bin\MyFirstProject.exe
-C:\Работы\Zed\Shop\bin\Newtonsoft.Json.dll
-C:\Работы\Zed\Shop\bin\System.Web.Optimization.dll
-C:\Работы\Zed\Shop\bin\Warehouse.dll
-C:\Работы\Zed\Shop\bin\WebGrease.dll
-C:\Работы\Zed\Shop\bin\MyFirstProject.pdb
-C:\Работы\Zed\Shop\bin\MyFirstProject.exe.config
-C:\Работы\Zed\Shop\bin\Warehouse.pdb
-C:\Работы\Zed\Shop\bin\System.Web.Optimization.xml
-C:\Работы\Zed\Shop\bin\Newtonsoft.Json.xml
-C:\Работы\Zed\Shop\bin\Antlr3.Runtime.pdb
-C:\Работы\Zed\Shop\bin\Microsoft.AspNet.FriendlyUrls.xml
-C:\Работы\Zed\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Работы\Zed\Shop\bin\ru\System.Web.Optimization.resources.dll
-C:\Работы\Zed\Shop\bin\ru\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Работы\Zed\Shop\obj\Debug\Shop.csprojAssemblyReference.cache
-C:\Работы\Zed\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
-C:\Работы\Zed\Shop\obj\Debug\Shop.csproj.CopyComplete
-C:\Работы\Zed\Shop\obj\Debug\Shop.dll
-C:\Работы\Zed\Shop\obj\Debug\Shop.pdb
-D:\Zed\Shop\obj\Debug\Shop.csprojAssemblyReference.cache
-D:\Zed\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
-D:\Zed\Shop\obj\Debug\Shop.dll
-D:\Zed\Shop\obj\Debug\Shop.pdb
-D:\Zed\Shop\bin\Shop.dll.config
-D:\Zed\Shop\bin\Shop.dll
-D:\Zed\Shop\bin\Shop.pdb
-D:\Zed\Shop\bin\roslyn\csc.exe
-D:\Zed\Shop\bin\roslyn\csc.exe.config
-D:\Zed\Shop\bin\roslyn\csc.rsp
-D:\Zed\Shop\bin\roslyn\csi.exe
-D:\Zed\Shop\bin\roslyn\csi.exe.config
-D:\Zed\Shop\bin\roslyn\csi.rsp
-D:\Zed\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Zed\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Zed\Shop\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Zed\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Zed\Shop\bin\roslyn\System.AppContext.dll
-D:\Zed\Shop\bin\roslyn\System.Collections.Immutable.dll
-D:\Zed\Shop\bin\roslyn\System.Console.dll
-D:\Zed\Shop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\Zed\Shop\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Zed\Shop\bin\roslyn\System.IO.Compression.dll
-D:\Zed\Shop\bin\roslyn\System.IO.FileSystem.dll
-D:\Zed\Shop\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Zed\Shop\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\Zed\Shop\bin\roslyn\System.IO.Pipes.dll
-D:\Zed\Shop\bin\roslyn\System.Reflection.Metadata.dll
-D:\Zed\Shop\bin\roslyn\System.Security.AccessControl.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Claims.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Zed\Shop\bin\roslyn\System.Security.Principal.Windows.dll
-D:\Zed\Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Zed\Shop\bin\roslyn\System.ValueTuple.dll
-D:\Zed\Shop\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\Zed\Shop\bin\roslyn\System.Xml.XmlDocument.dll
-D:\Zed\Shop\bin\roslyn\System.Xml.XPath.dll
-D:\Zed\Shop\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\Zed\Shop\bin\roslyn\vbc.exe
-D:\Zed\Shop\bin\roslyn\vbc.exe.config
-D:\Zed\Shop\bin\roslyn\vbc.rsp
-D:\Zed\Shop\bin\roslyn\VBCSCompiler.exe
-D:\Zed\Shop\bin\roslyn\VBCSCompiler.exe.config
-D:\Zed\Shop\bin\Antlr3.Runtime.dll
-D:\Zed\Shop\bin\AspNet.ScriptManager.bootstrap.dll
-D:\Zed\Shop\bin\AspNet.ScriptManager.jQuery.dll
-D:\Zed\Shop\bin\Microsoft.AspNet.FriendlyUrls.dll
-D:\Zed\Shop\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
-D:\Zed\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Zed\Shop\bin\Microsoft.ScriptManager.MSAjax.dll
-D:\Zed\Shop\bin\Microsoft.ScriptManager.WebForms.dll
-D:\Zed\Shop\bin\Microsoft.Web.Infrastructure.dll
-D:\Zed\Shop\bin\MyFirstProject.exe
-D:\Zed\Shop\bin\Newtonsoft.Json.dll
-D:\Zed\Shop\bin\System.Web.Optimization.dll
-D:\Zed\Shop\bin\Warehouse.dll
-D:\Zed\Shop\bin\WebGrease.dll
-D:\Zed\Shop\bin\MyFirstProject.pdb
-D:\Zed\Shop\bin\MyFirstProject.exe.config
-D:\Zed\Shop\bin\Warehouse.pdb
-D:\Zed\Shop\bin\System.Web.Optimization.xml
-D:\Zed\Shop\bin\Newtonsoft.Json.xml
-D:\Zed\Shop\bin\Antlr3.Runtime.pdb
-D:\Zed\Shop\bin\Microsoft.AspNet.FriendlyUrls.xml
-D:\Zed\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Zed\Shop\bin\ru\System.Web.Optimization.resources.dll
-D:\Zed\Shop\bin\ru\Microsoft.AspNet.FriendlyUrls.resources.dll
-D:\Zed\Shop\obj\Debug\Shop.csproj.CopyComplete
+D:\My repo\Test-repo\Shop\obj\Debug\Shop.csprojAssemblyReference.cache
+D:\My repo\Test-repo\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
+D:\My repo\Test-repo\Shop\obj\Debug\Shop.dll
+D:\My repo\Test-repo\Shop\obj\Debug\Shop.pdb
+D:\My repo\Test-repo\Shop\bin\Shop.dll.config
+D:\My repo\Test-repo\Shop\bin\Shop.dll
+D:\My repo\Test-repo\Shop\bin\Shop.pdb
+D:\My repo\Test-repo\Shop\bin\roslyn\csc.exe
+D:\My repo\Test-repo\Shop\bin\roslyn\csc.exe.config
+D:\My repo\Test-repo\Shop\bin\roslyn\csc.rsp
+D:\My repo\Test-repo\Shop\bin\roslyn\csi.exe
+D:\My repo\Test-repo\Shop\bin\roslyn\csi.exe.config
+D:\My repo\Test-repo\Shop\bin\roslyn\csi.rsp
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\My repo\Test-repo\Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\My repo\Test-repo\Shop\bin\roslyn\System.AppContext.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Collections.Immutable.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Console.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.IO.Compression.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.IO.FileSystem.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.IO.Pipes.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Reflection.Metadata.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.AccessControl.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Claims.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Security.Principal.Windows.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.ValueTuple.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Xml.XPath.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\My repo\Test-repo\Shop\bin\roslyn\vbc.exe
+D:\My repo\Test-repo\Shop\bin\roslyn\vbc.exe.config
+D:\My repo\Test-repo\Shop\bin\roslyn\vbc.rsp
+D:\My repo\Test-repo\Shop\bin\roslyn\VBCSCompiler.exe
+D:\My repo\Test-repo\Shop\bin\roslyn\VBCSCompiler.exe.config
+D:\My repo\Test-repo\Shop\bin\Antlr3.Runtime.dll
+D:\My repo\Test-repo\Shop\bin\AspNet.ScriptManager.bootstrap.dll
+D:\My repo\Test-repo\Shop\bin\AspNet.ScriptManager.jQuery.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.ScriptManager.WebForms.dll
+D:\My repo\Test-repo\Shop\bin\Microsoft.Web.Infrastructure.dll
+D:\My repo\Test-repo\Shop\bin\MyFirstProject.exe
+D:\My repo\Test-repo\Shop\bin\Newtonsoft.Json.dll
+D:\My repo\Test-repo\Shop\bin\System.Web.Optimization.dll
+D:\My repo\Test-repo\Shop\bin\Warehouse.dll
+D:\My repo\Test-repo\Shop\bin\WebGrease.dll
+D:\My repo\Test-repo\Shop\bin\MyFirstProject.pdb
+D:\My repo\Test-repo\Shop\bin\MyFirstProject.exe.config
+D:\My repo\Test-repo\Shop\bin\Warehouse.pdb
+D:\My repo\Test-repo\Shop\bin\System.Web.Optimization.xml
+D:\My repo\Test-repo\Shop\bin\Newtonsoft.Json.xml
+D:\My repo\Test-repo\Shop\bin\Antlr3.Runtime.pdb
+D:\My repo\Test-repo\Shop\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\My repo\Test-repo\Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\My repo\Test-repo\Shop\bin\ru\System.Web.Optimization.resources.dll
+D:\My repo\Test-repo\Shop\bin\ru\Microsoft.AspNet.FriendlyUrls.resources.dll
+D:\My repo\Test-repo\Shop\obj\Debug\Shop.csproj.CopyComplete
