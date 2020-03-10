@@ -352,3 +352,9 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /Shop/obj/Debug/*.cache
+/MyFirstProject/bin
+/MyFirstProject/obj
+/Shop/bin
+/Shop/obj
+/Warehouse/bin
+/Warehouse/obj
