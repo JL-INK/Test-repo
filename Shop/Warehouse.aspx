@@ -11,8 +11,9 @@
     <form id="form1" runat="server">
         <div style="height: 405px; width: 704px">
             Товар<br />
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="ProductId" DataValueField="ProductId">
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Id">
             </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [Name] FROM [Products]"></asp:SqlDataSource>
             <br />
             Дата<br />
             <asp:TextBox ID="Date" runat="server" OnTextChanged="Date_TextChanged"></asp:TextBox>
@@ -32,8 +33,8 @@
                     <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="select u.Id, u.ProductId, p.Name, Quantity, Date from Shop.dbo.Supply u
-left join Products p on p.Id = u.ProductId"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="select u.Id, u.ProductId, p.Name, Quantity, Date from Shop.dbo.Products p
+left join Shop.dbo.Supply u on u.ProductId =p.Id "></asp:SqlDataSource>
             <br />
             <asp:Button ID="Delete" runat="server" OnClick="Delete_Click" Text="Удалить" />
         </div>
