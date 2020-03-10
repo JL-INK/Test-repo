@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
         <div style="height: 405px; width: 704px">
             Товар<br />
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Id">
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Id" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged1">
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [Name] FROM [Products]"></asp:SqlDataSource>
             <br />
@@ -26,9 +26,7 @@
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                     <asp:CommandField ShowSelectButton="True" />
-                    <asp:BoundField DataField="Id" HeaderText="Id" InsertVisible="False" ReadOnly="True" SortExpression="Id" />
-                    <asp:BoundField DataField="ProductId" HeaderText="ProductId" SortExpression="ProductId" />
-                    <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                     <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                     <asp:BoundField DataField="Quantity" HeaderText="Quantity" SortExpression="Quantity" />
                     <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
                 </Columns>

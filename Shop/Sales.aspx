@@ -10,18 +10,14 @@
 <body>
     <form id="form1" runat="server">
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" Height="187px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="214px">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1" Height="187px" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="214px">
             <Columns>
+                <asp:CommandField ShowSelectButton="True" />
                 <asp:BoundField DataField="Id" HeaderText="Id" ReadOnly="True" SortExpression="Id" InsertVisible="False" />
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
                 <asp:BoundField DataField="balance" HeaderText="balance" ReadOnly="True" SortExpression="balance" />
             </Columns>
         </asp:GridView>
-        <br />
-        Товар<br />
-        <asp:DropDownList ID="Id" runat="server" DataSourceID="SqlDataSource3" DataTextField="ProductId" DataValueField="Id">
-        </asp:DropDownList>
-        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Id], [ProductId] FROM [Sales]"></asp:SqlDataSource>
         <br />
         Количество&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />

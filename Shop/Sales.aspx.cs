@@ -24,7 +24,11 @@ namespace Shop
         {
             var service = new BalanceProductService(connectionString);
             var product = new BalanceProduct();
-            string i = Id.Text.ToString();
+            if (GridView1.SelectedDataKey == null)
+            {
+                return;
+            }
+            string i = GridView1.SelectedDataKey["Id"].ToString();
             int id = Convert.ToInt32(i);
             product.ProductId = id;
             string d = Date.Text.ToString();

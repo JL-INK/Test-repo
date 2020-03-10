@@ -66,5 +66,9 @@ namespace Shop
 
         }
 
+        protected void DropDownList1_SelectedIndexChanged1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,24 +31,6 @@ namespace Shop {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// Id элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList Id;
-        
-        /// <summary>
-        /// SqlDataSource3 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource3;
-        
-        /// <summary>
         /// Quantity элемент управления.
         /// </summary>
         /// <remarks>
