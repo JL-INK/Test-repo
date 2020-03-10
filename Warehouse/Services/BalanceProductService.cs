@@ -178,5 +178,20 @@ namespace Warehouse.Service
             }
             return list;
         }
+
+        public void AddSales(int id, int quantity, DateTime date)
+        {
+            System.Data.SqlClient.SqlConnection connection = new System.Data.SqlClient.SqlConnection(_connectionString);
+            connection.Open();
+            string sql = @"insert into Sales (ProductId,Quantity,Date)
+                               values (@ProductId,@Quantity,@Date)";
+            SqlCommand command = new SqlCommand(sql, connection);
+            command.Parameters.Add(new SqlParameter("@ProductId", id));
+            command.Parameters.Add(new SqlParameter("@Quantity", quantity));
+            command.Parameters.Add(new SqlParameter("@Date", date));
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
     }
 }

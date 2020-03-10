@@ -15,3 +15,9 @@ D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
 D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
 D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.dll
 D:\My repo\Test-repo\Warehouse\obj\Debug\Warehouse.pdb
+C:\Users\218085\Desktop\Test-repo\Warehouse\bin\Debug\Warehouse.dll
+C:\Users\218085\Desktop\Test-repo\Warehouse\bin\Debug\Warehouse.pdb
+C:\Users\218085\Desktop\Test-repo\Warehouse\obj\Debug\Warehouse.csprojAssemblyReference.cache
+C:\Users\218085\Desktop\Test-repo\Warehouse\obj\Debug\Warehouse.csproj.CoreCompileInputs.cache
+C:\Users\218085\Desktop\Test-repo\Warehouse\obj\Debug\Warehouse.dll
+C:\Users\218085\Desktop\Test-repo\Warehouse\obj\Debug\Warehouse.pdb
