@@ -112,6 +112,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Webshop.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -125,8 +126,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Sales.aspx" />
+    <Content Include="W.aspx" />
     <Content Include="Warehouse.aspx" />
-    <Content Include="WebShop.aspx" />
+    <Content Include="Webshop.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -218,6 +220,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="W.aspx.cs">
+      <DependentUpon>W.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="W.aspx.designer.cs">
+      <DependentUpon>W.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Warehouse.aspx.cs">
       <DependentUpon>Warehouse.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -225,12 +234,12 @@
     <Compile Include="Warehouse.aspx.designer.cs">
       <DependentUpon>Warehouse.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebShop.aspx.cs">
-      <DependentUpon>WebShop.aspx</DependentUpon>
+    <Compile Include="Webshop.aspx.cs">
+      <DependentUpon>Webshop.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebShop.aspx.designer.cs">
-      <DependentUpon>WebShop.aspx</DependentUpon>
+    <Compile Include="Webshop.aspx.designer.cs">
+      <DependentUpon>Webshop.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

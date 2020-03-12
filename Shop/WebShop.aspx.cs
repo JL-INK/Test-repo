@@ -1,57 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
-using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using Warehouse.Models;
 using Warehouse.Service;
 
 namespace Shop
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Webshop : System.Web.UI.Page
     {
         string connectionString;
-
         protected void Page_Load(object sender, EventArgs e)
         {
             connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
         }
-       
-        protected void TextBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        protected void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void Add_Click(object sender, EventArgs e)
-        {
-            var service = new BalanceProductService(connectionString);
-            var product = new Product();
-            string name = TextBox1.Text.ToString();
-            product.Name = name;
-            string description = TextBox2.Text.ToString();
-            product.Description = description;
-            service.AddProduct(product);
-            GridView1.DataBind();
-        }
-
-        protected void Delete_Click(object sender, EventArgs e)
-        {
-            var service = new BalanceProductService(connectionString);
-            if (GridView1.SelectedDataKey == null)
-            {
-                return;
-            }
-            string productId = GridView1.SelectedDataKey["Id"].ToString();
-               string tableName = "Products";
-            service.DeleteFromTable(tableName, productId);
-            GridView1.DataBind();
-        }
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void Add_Click1(object sender, EventArgs e)
+        {
+            var service = new BalanceProductService(connectionString);
+            var product = new Product();
+            string name = Product.Text.ToString();
+            product.Name = name;
+            string description = Description.Text.ToString();
+            product.Description = description;
+            service.AddProduct(product);
+            GridView1.DataBind();
         }
     }
 }
