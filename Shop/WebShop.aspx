@@ -1,11 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Webshop.aspx.cs" Inherits="Shop.Webshop" %>
-
-<asp:Content ID="Wareshop" ContentPlaceHolderID="MainContent" runat="server">
-    <p>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+      <p>
         <br />
-        <asp:TextBox class="Product" ID="Product" runat="server" MaxLength="50" Width="100%" placeholder="Введите название товара..."></asp:TextBox>
+        <asp:TextBox class="Product" ID="Product" runat="server" MaxLength="50" Width="100%" placeholder="Введите название товара..." OnTextChanged="Product_TextChanged"></asp:TextBox>
     </p>
-    <asp:TextBox class="Product" ID="Description" runat="server" TextMode="MultiLine" Height="50px" Width="100%" placeholder="Введите описание товара..."></asp:TextBox>
+    <asp:TextBox class="Product" ID="Description" runat="server" TextMode="MultiLine" Height="50px" Width="100%" placeholder="Введите описание товара..." OnTextChanged="Description_TextChanged"></asp:TextBox>
 
     <p>
         <asp:Button ID="Add" runat="server" Text="Добавить" OnClick="Add_Click1" />
@@ -19,7 +18,7 @@
                 <asp:ButtonField ItemStyle-Width="50px" ControlStyle-CssClass="btn btn-secondary" ButtonType="Button" CommandName="Delete" Text="Удалить" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="Products" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products]" DeleteCommand="delete from Products where id = @Id">
+        <asp:SqlDataSource ID="Products" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Products]" DeleteCommand="delete from Products where id = @Id" OnSelecting="Products_Selecting">
             <DeleteParameters>
                 <asp:Parameter Name="Id" />
             </DeleteParameters>

@@ -34,5 +34,20 @@ namespace Shop
             service.AddProduct(product);
             GridView1.DataBind();
         }
+
+        protected void Product_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Description_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Products_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }

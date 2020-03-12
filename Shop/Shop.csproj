@@ -126,7 +126,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Sales.aspx" />
-    <Content Include="W.aspx" />
     <Content Include="Warehouse.aspx" />
     <Content Include="Webshop.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -219,13 +218,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="W.aspx.cs">
-      <DependentUpon>W.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="W.aspx.designer.cs">
-      <DependentUpon>W.aspx</DependentUpon>
     </Compile>
     <Compile Include="Warehouse.aspx.cs">
       <DependentUpon>Warehouse.aspx</DependentUpon>
