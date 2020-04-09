@@ -9,7 +9,7 @@ namespace Warehouse.Models
     /// <summary>
     /// Товар
     /// </summary>
-    public class Product
+    public class Products
     {
         /// <summary>
         /// ИД

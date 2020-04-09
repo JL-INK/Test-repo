@@ -113,7 +113,7 @@ namespace Warehouse.Service
         /// Добавить продукт
         /// </summary>
         /// <param name="product">Продукт</param>
-        public void AddProduct(Product product)
+        public void AddProduct(Products product)
         {
             AddProduct(product.Name, product.Description);
         }

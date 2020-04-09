@@ -26,7 +26,7 @@ namespace Shop
         protected void Add_Click1(object sender, EventArgs e)
         {
             var service = new BalanceProductService(connectionString);
-            var product = new Product();
+            var product = new Products();
             string name = Product.Text.ToString();
             product.Name = name;
             string description = Description.Text.ToString();

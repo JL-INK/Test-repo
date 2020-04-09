@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Товары";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Товары</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Add", "Home"))
+        {
+            <p></p>
+            <p>@Html.TextBox("Name", "", new { @class = "form-control", @placeholder = "Название товара" })</p>
+            <p>@Html.TextBox("Description", "", new { @class = "form-control", @placeholder = "Описание товара" })</p>
+            <input type="submit" value="Добавить" />
+            <p></p>
+        }
+
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td><p>Товар</p></td>
+                <td><p>Описание</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Products)
+            {
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    <td><p>@b.Description</p></td>
+                    <td><p><a href="/Home/Delete/@b.Id">Удалить</a></p></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</body>
+</html>

@@ -83,7 +83,7 @@ namespace ConsoleApp1
 
                     case "add":
                         {
-                            var product = new Product();
+                            var product = new Products();
                             product.Name = filterV;
                             product.Description = nameOrDate;
                             service.AddProduct(product);
