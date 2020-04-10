@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Продажи";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Товары</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("AddSupply", "Home"))
+        {
+            <p></p>
+            <p>@Html.DropDownList("ProductList", ViewBag.Supply as SelectList)</p>
+            <p>@Html.TextBox("Quantity", "", new { @class = "form-control", @placeholder = "Количество" })</p>
+            <p>@Html.TextBox("Date", "", new { @class = "form-control", @placeholder = "Дата" })</p>
+            <input type="submit" value="Добавить" />
+            <p></p>
+        }
+
+        <table class="table table-bordered table-hover">
+            <tr>
+                <td><p>Товар</p></td>
+                <td><p>Количество</p></td>
+                <td><p>Дата</p></td>
+                <td></td>
+            </tr>
+            @foreach (var b in ViewBag.Supply)
+            {
+                <tr>
+                    <td><p>@b.Name</p></td>
+                    <td><p>@b.Quantity</p></td>
+                    <td><p>@b.Date</p></td>
+                    <td><p><a href="/Home/DeleteSupply/@b.Id">Удалить</a></p></td>
+                </tr>
+            }
+        </table>
+
+    </div>
+</body>
+</html>
+
+

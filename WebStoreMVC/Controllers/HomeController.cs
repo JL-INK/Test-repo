@@ -60,6 +60,35 @@ namespace WebStoreMVC.Controllers
             }
         }
 
+        public ActionResult Supply()
+        {
+            List<BalanceProduct> list = new List<BalanceProduct>();
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                SqlCommand product = new SqlCommand(@"select u.Id,u.ProductId,p.Name,Quantity,Date from Supply u 
+                left join Products p on u.ProductId=p.Id", connection);
+                SqlDataReader readerName = product.ExecuteReader();
+                while (readerName.Read())
+                {
+                    BalanceProduct item = new BalanceProduct()
+                    {
+                        Id = (int)readerName["Id"],
+                        ProductId = (int)readerName["ProductId"],
+                        Name = readerName["Name"].ToString(),
+                        Quantity = (int)readerName["Quantity"],
+                        Date = (DateTime)readerName["Date"],
+                    };
+                    list.Add(item);
+                }
+                SelectList ProductList = new SelectList(list, "ProductId", "Name");
+                readerName.Close();
+                connection.Close();
+                ViewBag.Supply = list;
+                return View();
+            }
+        }
         public void Add(string name, string description)
         {
             string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
@@ -76,6 +105,42 @@ namespace WebStoreMVC.Controllers
                 Products();
             }
         }
+
+        public void AddSupply(string name, int quantity, DateTime date)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string sql = @"insert into Supply (ProductId,Quantity,Date)
+                               values (@Name,@Quantity,@Date)";
+                SqlCommand command = new SqlCommand(sql, connection);
+                command.Parameters.Add(new SqlParameter("@Name", name));
+                command.Parameters.Add(new SqlParameter("@Quantity", quantity));
+                command.Parameters.Add(new SqlParameter("@Date", date));
+                command.ExecuteNonQuery();
+                connection.Close();
+                Products();
+            }
+        }
+
+        public void DeleteSupply(int id)
+        {
+            ViewBag.Id = id;
+            string connectionString = ConfigurationManager.ConnectionStrings["connectionString"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                string sql = @"delete from Supply where Id = " + id;
+                using (SqlCommand delete = new SqlCommand(sql, connection))
+                {
+                    delete.ExecuteNonQuery();
+                }
+                connection.Close();
+                Products();
+            }
+        }
+
         public void Delete(int id)
         {
             ViewBag.Id = id;
